@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Layout from "./layout/Layout";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   // Routes with basename for GitHub Pages
@@ -18,6 +19,10 @@ const App = () => {
           { path: "contact", element: <Contact /> },
           { path: "about", element: <About /> },
           { path: "exercisesDetails/:id", element: <ExercisesDetails /> },
+          {
+            path: "*",
+            element: <NotFound />,
+          },
         ],
       },
     ],

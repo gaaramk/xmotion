@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ExerciseCard = ({ exercise }) => {
-  console.log(exercise, "exercise");
 
   return (
     <Link
