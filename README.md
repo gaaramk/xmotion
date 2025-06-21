@@ -1,12 +1,76 @@
-# React + Vite
+# 🏋️‍♂️ XMotion - Fitness App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**XMotion** is a modern fitness web app built with React 19 and Material UI 7.  
+It helps users discover workout exercises tailored to their fitness goals, based on muscle groups or equipment, with rich details and demo videos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Features
 
-## Expanding the ESLint configuration
+- 🧠 **Search Exercises** by name, target muscle, or equipment
+- 📄 **View Exercise Details** with instructions and visuals
+- 🎥 **Integrated YouTube Videos** for each exercise
+- 💬 **Responsive Contact & About Pages**
+- 🌐 **Fully Responsive Layout**
+- ⚛️ **React 19 + MUI 7 + React Router v7**
+- 📡 **API Integration** via [RapidAPI - ExerciseDB](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+Coming soon...
+
+---
+
+## 🚀 Technologies Used
+
+| Tech               | Description                                |
+|--------------------|--------------------------------------------|
+| React 19           | JavaScript library for building UI         |
+| React Router 7     | Routing and navigation                     |
+| MUI 7              | Modern, responsive components              |
+| React Query (TanStack) | Server state & API caching            |
+| Axios              | HTTP client for API requests               |
+| Vite               | Fast dev/build tooling                     |
+
+---
+
+## 📁 Project Structure
+
+src/
+├── components/ # Reusable components
+│ ├── HeroExercises.jsx
+│ ├── SearchExercises.jsx
+│ ├── Details.jsx
+│ ├── YoutubeVideos.jsx
+├── pages/ # Pages (Home, About, Contact, Details)
+│ ├── Home.jsx
+│ ├── ExercisesDetails.jsx
+├── App.jsx # Main app structure
+├── main.jsx # Entry point
+
+
+---
+
+## 📩 Contact
+
+- Email: [mohammedkamal07@proton.me](mailto:mohammedkamal07@proton.me)  
+- GitHub: [github.com/gaaramk](https://github.com/gaaramk)  
+- LinkedIn: [Mohamed Kamal El-Dien](https://www.linkedin.com/in/mohamed-kamal-el-dien-383889359)
+
+---
+
+## 📦 Setup & Run Locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/gaaramk/xmotion.git
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+
+Built by Mohamed Kamal El-Dien
