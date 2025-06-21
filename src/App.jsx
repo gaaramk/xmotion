@@ -7,38 +7,31 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 
 const App = () => {
-  // Routes
-  const routes = createBrowserRouter([
+  // Routes with basename for GitHub Pages
+  const routes = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Layout />,
+        children: [
+          { index: true, element: <Home /> },
+          { path: "contact", element: <Contact /> },
+          { path: "about", element: <About /> },
+          { path: "exercisesDetails/:id", element: <ExercisesDetails /> },
+        ],
+      },
+    ],
     {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          index: true,
-          element: <Home />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
-                {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "/exercisesDetails/:id",
-          element: <ExercisesDetails />,
-        },
-      ],
-    },
-  ]);
+      basename: "/xmotion",
+    }
+  );
 
-  // Query
+  // React Query
   const queryClient = new QueryClient();
 
   return (
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={routes} />;
+      <RouterProvider router={routes} />
     </QueryClientProvider>
   );
 };

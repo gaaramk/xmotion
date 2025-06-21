@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import Loading from "./Loading";
 const YoutubeVideos = ({ exercise }) => {
   const options = {
     headers: {
@@ -21,7 +22,7 @@ const YoutubeVideos = ({ exercise }) => {
   });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (isError) {

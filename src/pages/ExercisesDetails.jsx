@@ -4,6 +4,7 @@ import axios from "axios";
 import Details from "../components/Details";
 import YoutubeVideos from "../components/YoutubeVideos";
 import { Box } from "@mui/material";
+import Loading from "../components/Loading";
 
 const ExercisesDetails = () => {
   const { id } = useParams();
@@ -27,7 +28,7 @@ const ExercisesDetails = () => {
   });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (isError) {
